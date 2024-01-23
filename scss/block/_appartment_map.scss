@@ -1,0 +1,19 @@
+.appartment-map {
+    background: $dark-color;
+    padding-bottom: 180px;
+
+    &__items {
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            font-family: 'Playfair Display';
+            color: $accent-color;
+        }
+
+        .map {
+            min-height: 358px;
+            background-color: #626262;
+            margin-top: 88px;
+        }
+    }
+}

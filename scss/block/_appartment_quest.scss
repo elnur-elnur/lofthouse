@@ -1,0 +1,30 @@
+.appartment-questions {
+    background-color: $dark-color;
+    padding-bottom: 180px;
+    h1 {
+        font-family: 'Playfair Display';
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        color: $accent-color;
+    }
+    form {
+        padding-top: 38px;
+    }
+    ul {
+        display: flex;
+        width: 100%;
+        gap: 30px;
+        li {
+            width: 25%;
+            p {
+                text-align: center;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px;
+                color: $white-color;
+            }
+        }
+    }
+}

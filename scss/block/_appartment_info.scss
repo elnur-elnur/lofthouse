@@ -1,0 +1,63 @@
+.appartment-info {
+    padding-top: 180px;
+    padding-bottom: 191px;
+    background: linear-gradient(
+            180deg,
+            #242b33 10.42%,
+            rgba(36, 43, 51, 0) 50.52%,
+            #242b33 90.1%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(36, 43, 51, 0.9) 0%,
+            rgba(36, 43, 51, 0.9) 100%
+        ),
+        url('../images/appartmentInfoImg.jpg'),
+        lightgray 50% / cover no-repeat;
+
+    h1 {
+        font-size: 36px;
+        color: $accent-color;
+        margin-bottom: 15px;
+        font-weight: 700;
+        font-family: 'Playfair Display';
+    }
+
+    &-items {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        .appartment-info {
+            &-left {
+                width: 50%;
+                p {
+                    color: $white-color;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+            &-right {
+                width: 50%;
+                .cta-form {
+                    display: flex;
+                    gap: 30px;
+                    input{
+                        margin-bottom: 46px;
+                    }
+                    &-left {
+                        width: 50%;
+                        p {
+                            font-size: 13px;
+                            text-align: center;
+                            color: $white-color;
+                            font-weight: 400;
+                        }
+                    }
+                    &-right {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

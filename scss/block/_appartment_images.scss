@@ -1,0 +1,38 @@
+.appartment-images {
+  background: $dark-color;
+  h1 {
+    font-family: "Playfair Display";
+    font-size: 36px;
+    color: $accent-color;
+    margin-bottom: 88px;
+  }
+  &-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 10px;
+    .appartment-images-item {
+      position: relative;
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      p {
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        color: $white-color;
+        z-index: 10;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .appartment-images-items {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,56 @@
+.footer {
+    background: #2d343c;
+    padding-top: 72px;
+    padding-bottom: 51px;
+    &-items {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.7px;
+        color: $white-color;
+
+        li {
+            margin-bottom: 15px;
+        }
+        &__logo {
+            width: 25%;
+        }
+
+        &__menu {
+            width: 25%;
+            a {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.7px;
+                color: $white-color;
+            }
+        }
+        &__advantages {
+            width: 25%;
+        }
+        &__contact {
+            width: 25%;
+            .contact-item {
+                span {
+                    font-weight: 700;
+                    color: $accent-color;
+                }
+                .social-media ul {
+                    display: flex;
+                    gap: 12px;
+                    img {
+                        width: 37.401px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.appartment-advantages {
+  background: $dark-color;
+  &-items {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    .appartment-advantages-item {
+      margin-bottom: 120px;
+      margin-top: 120px;
+      color: $accent-color;
+      text-align: center;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 27px; /* 135% */
+      img {
+        width: 80px;
+        height: 80px;
+      }
+      p {
+        font-size: 20px;
+        color: $white-color;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .appartment-advantages {
+    &-items {
+      flex-wrap: wrap;
+      gap: 20px;
+      .appartment-advantages-item {
+        width: 100%;
+        margin: 20px 0;
+      }
+    }
+  }
+}
